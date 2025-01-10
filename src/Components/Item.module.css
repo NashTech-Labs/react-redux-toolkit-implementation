@@ -1,0 +1,39 @@
+
+
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+ul {
+
+    list-style: none;
+    padding: 0;
+}
+
+
+li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    background-color: #f7f1f1;
+}
+span {
+    color: #000000;
+    font-weight: 600;
+}
+
+button {
+    background-color: #ff0000;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
