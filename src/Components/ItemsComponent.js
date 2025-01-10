@@ -15,7 +15,8 @@ function ItemsComponent() {
     }
 
   return (
-    <div style={{marginTop:'10px'}} className="container">
+    <>
+   { item.length > 0 && <div  style={{marginTop:'10px'}} className="container">
         <ul>
             {item.map((item) => (
             <li key={item.id}>
@@ -26,6 +27,14 @@ function ItemsComponent() {
         </ul>
      
     </div>
+    } 
+    { item.length === 0 && <div style={{marginTop:'10px'}} className="container">
+        <p> No Items </p>
+    </div>
+    }
+
+</>
+
   );
 }
 

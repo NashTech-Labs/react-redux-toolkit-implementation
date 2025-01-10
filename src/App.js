@@ -12,6 +12,7 @@ function App() {
   const addItem = () => {
     if(inputRef.current.value === '') return;
       dispatch(itemAction.addItem({ id: crypto.randomUUID(), name: inputRef.current.value }));  
+      inputRef.current.value = '';
   }
 
 
